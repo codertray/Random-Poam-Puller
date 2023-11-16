@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <meta charset="utf-8">
+        <title>Random Poem Puller</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@1&family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css"
+    </head>
+    <body class="container <%= style %> ">
+        <main class="content">
+            <h1><%= data.title %></h1>
+            <p><%= data.author %></p>
+            <div>
+                <% lines.forEach(function(line) { %>
+                    <p><%= line %></p>
+                <% }); %>
+            </div>
+        </main>
+        <footer>
+            <p>Random Poem Puller, Powered by PoetryDB, and brought to you by CreatorTray <%= new Date().getFullYear() %></p>
+        </footer>
+    </body>
+</html>

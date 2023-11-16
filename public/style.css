@@ -1,0 +1,106 @@
+body
+.container {
+    font-size: 36pt;
+    font-weight: 600;
+    font-family: 'Dancing Script', cursive;
+}
+
+.blue-sky {
+    background: radial-gradient(
+      #0033EB 0%,
+      #8779EB 60%,
+      #87CEEB 80%
+    );
+    color: #333; /* Dark Gray */
+}
+  
+.sunset {
+    background: linear-gradient(
+        #8A2BE2 0%,  /* Soft Purple at 100% */
+        #FFD700 80%,  /* Warm Yellow at 50% */
+        #FF4500 90%   /* Sunset Orange at 0% */
+    );
+    color: #333; /* Dark Gray */
+}
+  
+.library {
+    background: linear-gradient(
+        to right,
+        #8B4513 0%,
+        #FFE4C4 25%,
+        #006400 75%
+    );
+    color: #333; /* White */
+}
+  
+.midnight {
+    background: radial-gradient(
+        #000000 0%,
+        #001F3F 40%,
+        #191970 60%
+    );
+    color: #fff; /* White */
+}
+  
+.under-water {
+    background: radial-gradient(
+      #008080 0%,
+      #2E8B57 20%,
+      #1E90FF 50%
+    );
+    color: #fff; /* White */
+}
+  
+.log-cabin {
+    background: linear-gradient(
+      to right,  /* Horizontal gradient */
+      #8B4513 0%,   /* Earthy Brown at 0% */
+      #DEB887 50%,  /* Warm Wood at 50% */
+      #808000 100%  /* Mossy Green at 100% */
+    );
+    color: #333; /* White */
+}
+
+.blue-sky, .sunset, .library, .midnight, .under-water, .log-cabin {
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+
+h1{
+    font-size: 2rem;
+    font-weight: 800;
+    font-family: 'DM Serif Display', serif;
+}
+.author {
+    font-size: 0.75rem;
+    font-family: 'DM Serif Display', serif;
+    font-weight: 800;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+div {
+    text-align: center;
+}
+footer> p {
+    font-weight: 400;
+    font-size: 0.5rem;
+    font-family: 'DM Serif Display', serif;
+    text-align: center;
+    margin-bottom: 0px;
+}
+@media (max-width: 1080px) {
+    body {
+        font-size: 24pt;
+    }
+    .content {
+        width: 100%;
+        margin-left: 0px;
+    }
+}
